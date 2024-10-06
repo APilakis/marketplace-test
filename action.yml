@@ -1,0 +1,12 @@
+name: "Hello world"
+description: "Sample upload"
+inputs:
+  text:
+    description: "text to print"
+    required: false
+    default: "Hello world"
+runs:
+  using: composite
+  steps: 
+    - run: echo "Your text is $text"
+    
